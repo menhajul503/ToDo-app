@@ -142,7 +142,11 @@ h1 {
 .checkbox input {
     width: 18px;
     height: 18px;
-    accent-color: #4f46e5;
+    accent-color: #22c55e;
+}
+
+.checkbox input:checked {
+    accent-color: #16a34a;
 }
 
 .checkbox span {

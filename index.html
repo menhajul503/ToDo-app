@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <H1>Menhajul Islam </H1>
-    <h1>hi</h1>
+    <main class="todo-app">
+        <section class="panel">
+            <div class="panel__header">
+                <div>
+                    <p class="subtitle">Daily Planner</p>
+                    <h1>Todo List</h1>
+                </div>
+                <span class="badge">5 tasks</span>
+            </div>
+
+            <form class="todo-form">
+                <input type="text" placeholder="Add a new task" aria-label="Add a new task">
+                <button type="submit">Add</button>
+            </form>
+
+            <div class="todo-summary">
+                <p>Organize your work and keep track of progress.</p>
+            </div>
+
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Finish UI design for the todo app</span>
+                    </label>
+                    <button class="delete-btn">×</button>
+                </li>
+                <li class="todo-item completed">
+                    <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span>Review project layout</span>
+                    </label>
+                    <button class="delete-btn">×</button>
+                </li>
+                <li class="todo-item">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Plan next steps</span>
+                    </label>
+                    <button class="delete-btn">×</button>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
